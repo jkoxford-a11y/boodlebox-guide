@@ -228,6 +228,60 @@ th {
   padding-top: 1.25rem;
 }
 
+.kicker {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 0.5rem;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.stat-card {
+  background: var(--accent-soft);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.1rem 1.2rem;
+}
+
+.stat-card .stat-number {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1.15;
+}
+
+.stat-card .stat-label {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.3rem;
+}
+
+.eco-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.eco-list li {
+  position: relative;
+  padding-left: 1.7rem;
+}
+
+.eco-list li::before {
+  content: "🌿";
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+  font-size: 0.9em;
+}
+
 footer.site {
   border-top: 1px solid var(--border);
   margin-top: 3rem;
