@@ -306,3 +306,97 @@ footer.site .wrap {
   font-size: 0.85rem;
   color: var(--muted);
 }
+
+.path {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  counter-reset: path;
+}
+
+.path li {
+  counter-increment: path;
+  position: relative;
+  margin: 0 0 1rem;
+}
+
+.path li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 2.34rem;
+  top: 100%;
+  width: 2px;
+  height: 1rem;
+  background: var(--border);
+}
+
+.path-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.2rem 1.4rem;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.path-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.path-card::before {
+  content: counter(path);
+  flex: 0 0 auto;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.1rem;
+}
+
+.path-card .eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.path-card h3 { margin: 0 0 0.3rem; font-size: 1.1rem; }
+.path-card p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+
+.checkin {
+  margin: 1.25rem 0;
+  padding: 0.9rem 1.1rem;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.checkin-label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+}
+
+.checkin p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}

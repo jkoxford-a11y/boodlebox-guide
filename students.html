@@ -15,7 +15,7 @@
       <a href="pilot.html">About</a>
       <a href="students.html" class="active">BoodleBox Guide</a>
       <a href="environment.html">Environment</a>
-      <a href="kickoff.html">Toolkit Kickoff</a>
+      <a href="toolkit.html">Toolkit</a>
     </nav>
   </div>
 </header>
@@ -37,7 +37,8 @@
     <li>Note the two icons you'll use constantly: the <strong>brain icon</strong> 🧠 (your Knowledge Bank, where you store files) and the <strong>paperclip icon</strong> 📎 (attaches files to a specific chat).</li>
   </ol>
 
-  <h2>Build your first study bot</h2>
+  <h2>Build a bot for each class</h2>
+  <p>Build one bot per course instead of mixing several classes into one general bot — each bot stays focused on that course's material and how you specifically want to work with it.</p>
   <ol class="steps">
     <li>Save your course materials (lecture notes, textbook chapters, syllabus, rubrics) as PDF, DOCX, or TXT.</li>
     <li>Upload them to your Knowledge Bank (🧠 → <strong>+ Upload Files</strong>).</li>
@@ -45,7 +46,36 @@
     <li>Give the bot a clear role, e.g. <em>"You are my study assistant for [course]. Use the attached materials to help me review concepts, quiz me, and explain difficult topics in simple terms."</em></li>
     <li>Switch it to <strong>Bot Mode</strong> (⋯ menu) so it's saved as a reusable tool, not a one-off chat.</li>
     <li>Turn on <strong>Knowledge to Context Mode</strong> so it reasons over your full documents, not just snippets.</li>
+    <li>Turn on <strong>web search</strong> in the bot's settings if you want it to look things up live, not just from what you attached — it's a toggle you set when you build the bot.</li>
     <li>Rename and organize it (e.g. "PSYC 101 Study Bot") so you can find it again.</li>
+  </ol>
+
+  <h2>Save time with a personal AI context file</h2>
+  <p>Before you build more than one class bot, create a short file that tells AI how you prefer to work and learn — write it once, then attach it to every class bot you build. It should do more than describe you: it should tell AI how to <strong>challenge you</strong>, not just agree with you.</p>
+  <div class="template-block">Interview me to create a short personal context file that I can give to AI systems so they can work with me more effectively.
+
+Ask one question at a time. Keep the interview focused on academic and communication preferences. Do not ask for sensitive personal information.
+
+Ask about:
+- my year in college and major;
+- courses or subjects I am currently working on;
+- how much detail I usually prefer, concise or expansive;
+- whether I want sophisticated vocabulary or simpler language;
+- whether examples, analogies, or direct explanations help me most;
+- how much you should challenge my assumptions rather than just agreeing with me.
+
+If I am unsure about a preference, briefly give me a few examples so I can choose.
+
+When the interview is finished, produce a short document titled "My AI Context" that AI can immediately use as instructions. Include only information I actually provided or explicitly approved.</div>
+  <p>Save the result to your Knowledge Bank and attach it to each class bot. Treat it as a living file — update it whenever you discover something that makes AI more useful, or something you want it to stop doing.</p>
+
+  <h2>Keep one Course Notes Ledger</h2>
+  <p>Only a limited number of documents can be active on a bot at once, so don't use one file for every class meeting. Keep one running document per course instead — for example, "PSYC 220 Course Notes Ledger."</p>
+  <ol class="steps">
+    <li>Type or transcribe your handwritten notes into the ledger (AI can usually do this straight from a picture).</li>
+    <li>Check the transcription against your original notes.</li>
+    <li>Date each class section and preserve the terminology your instructor actually used.</li>
+    <li>Add new notes to the same running document, and re-upload it to the bot as the semester progresses.</li>
   </ol>
 
   <h2>What to actually ask it</h2>
@@ -59,6 +89,10 @@
   <h2>Two features worth knowing early</h2>
   <p><strong>Model comparison</strong> — you can put the same question to two different models and compare the answers side by side. This isn't just a novelty: models genuinely differ in reasoning quality, and free tools you might use outside BoodleBox may be meaningfully weaker than what your institutional account gives you access to.</p>
   <p><strong>GroupChat</strong> — you can share a bot with classmates so a study group works off the same grounded tool instead of everyone re-explaining context to their own separate chat.</p>
+
+  <h2>Handling long conversations</h2>
+  <p>Around 30 substantive back-and-forth messages is a useful warning point to consider a fresh chat — a practical heuristic, not a technical cutoff. Start sooner if you've pasted a lot of material, changed topics repeatedly, or notice the bot forgetting instructions or contradicting earlier work. Use the same class bot, ask for a handoff, then paste it into a new conversation.</p>
+  <div class="template-block">Create a handoff for a fresh chat. Preserve my goal, important context, decisions we have made, unresolved questions, relevant terminology, and what we should do next. Do not add new conclusions.</div>
 
   <h2>Verify before you trust</h2>
   <p>A study bot answering from your own course materials is still an AI system that can misstate, oversimplify, or overstate its confidence — grounding it in your materials reduces but doesn't eliminate that. Before you rely on anything it tells you for a grade, a claim in a paper, or a fact you didn't already know, check it against the source material or your instructor. Asking a second AI to check the first one isn't verification — go to a course source or a person.</p>
