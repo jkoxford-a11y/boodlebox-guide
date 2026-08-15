@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BoodleBox Technical Reference — Psychology AI Integration Pilot</title>
+<meta name="description" content="Optional reference: how Knowledge Bank, Bot Builder, model switching, folders, and prompt modes actually work in BoodleBox.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html">Psychology AI Integration Pilot</a>
+    <nav class="top">
+      <a href="pilot.html">About</a>
+      <a href="students.html">BoodleBox Guide</a>
+      <a href="environment.html">Environment</a>
+      <a href="toolkit.html">Toolkit</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>BoodleBox Technical Reference</h1>
+  <p class="lede">How Knowledge Bank, Bot Builder, model switching, folders, and prompt modes actually work — for when you need the mechanics, not just the getting-started version.</p>
+
+  <p class="notice">This is optional reference material, not required reading. Use it when a course asks you to upload knowledge, build a bot, change AI models, organize chats, or change a prompt mode and you want the exact steps. Current as of August 2026 — exact menu names may shift as the platform updates.</p>
+
+  <h2>Knowledge Bank</h2>
+  <p>The <strong>Knowledge Bank</strong> is your reusable file library. Upload a file once, then attach it to chats or custom bots when you need it.</p>
+
+  <h3>Add a file</h3>
+  <ol class="steps">
+    <li>Open <strong>Knowledge Bank</strong> from the left navigation.</li>
+    <li>Select <strong>Upload Files</strong>.</li>
+    <li>Drag in a file or choose one from your computer.</li>
+    <li>Wait for BoodleBox to finish analyzing it.</li>
+  </ol>
+  <p>Use <strong>Add Folder</strong> to organize files and <strong>Find Knowledge</strong> to search for them.</p>
+
+  <h3>Attach a file to a chat</h3>
+  <p class="notice">A file sitting in your Knowledge Bank is <strong>not automatically being used by the AI</strong>. It must be attached.</p>
+  <ol class="steps">
+    <li>Open your chat.</li>
+    <li>Select <strong>Attach Knowledge</strong> — the paperclip near the prompt box.</li>
+    <li>Choose <strong>Upload File</strong> for a new file, or <strong>From Knowledge</strong> for one already in your Knowledge Bank.</li>
+    <li>Select the file.</li>
+  </ol>
+  <p>Files uploaded directly through a chat are also saved to your Knowledge Bank for later use.</p>
+
+  <h3>Star frequently used files</h3>
+  <p>You can <strong>star</strong> a Knowledge Bank file to have it automatically attached to new chats. Useful for something you expect to use repeatedly, like a course reference or your personal AI context file.</p>
+
+  <h2>Build a Custom Bot</h2>
+  <p>A custom bot is a reusable AI assistant with its own instructions, model, and optional knowledge files.</p>
+  <ol class="steps">
+    <li>Open <strong>Bot Builder</strong> from the left sidebar.</li>
+    <li>Select <strong>Build Bot</strong>.</li>
+    <li>Give your bot a name.</li>
+    <li>Build it using either <strong>Vibe Build</strong> (describe what you want in normal language) or <strong>Configure</strong> (directly control its settings).</li>
+    <li>Test the bot.</li>
+    <li>Select <strong>Publish</strong>.</li>
+  </ol>
+
+  <h3>What matters in Configure</h3>
+  <ul>
+    <li><strong>Powered By</strong> — which AI model runs the bot.</li>
+    <li><strong>Bot Instructions</strong> — what the bot should do and how it should behave.</li>
+    <li><strong>Knowledge</strong> — files the bot should consistently use.</li>
+    <li><strong>Bot Communications</strong> — its greeting.</li>
+  </ul>
+  <p class="notice"><strong>Important:</strong> the greeting and profile description do <strong>not</strong> control the bot's behavior. Put behavioral instructions in <strong>Bot Instructions</strong>.</p>
+
+  <h3>Add knowledge to a bot</h3>
+  <ol class="steps">
+    <li>Open the bot in <strong>Bot Builder &rarr; Configure</strong>.</li>
+    <li>Find <strong>Knowledge</strong>.</li>
+    <li>Upload a file or select one from your Knowledge Bank.</li>
+    <li>Select <strong>Publish Changes</strong>.</li>
+  </ol>
+  <p>Keep the distinction clear: <strong>Knowledge Bank</strong> is your reusable file library; <strong>Bot Knowledge</strong> is files attached specifically to one bot.</p>
+
+  <h2>Change AI Models</h2>
+  <p>You can change models without starting a new conversation. The next model continues in the existing chat.</p>
+
+  <h3>Switch models</h3>
+  <ol class="steps">
+    <li>Find the current model name at the bottom-left of the chat input.</li>
+    <li>Select it to open the model picker.</li>
+    <li>Choose another model.</li>
+    <li>Your next message goes to that model.</li>
+  </ol>
+
+  <h3>Find all available models</h3>
+  <p>The first models shown are not the complete list.</p>
+  <ol class="steps">
+    <li>Open the model picker.</li>
+    <li>Select <strong>AI Models</strong> on the left.</li>
+    <li>Choose a provider such as ChatGPT, Claude, or Gemini.</li>
+    <li>Expand the provider to see its available models.</li>
+    <li>Select the exact model you want.</li>
+  </ol>
+  <p>You can also search for models, or use <code>@</code> when working with multiple AIs in one conversation.</p>
+
+  <h2>Chat Folders</h2>
+  <p>Folders are for <strong>organizing chats</strong>.</p>
+  <ol class="steps">
+    <li>Find <strong>My Folders</strong> in the sidebar.</li>
+    <li>Select <strong>Add Folder</strong>.</li>
+    <li>Name the folder.</li>
+    <li>Create chats inside it or move existing chats into it.</li>
+  </ol>
+
+  <p class="notice"><strong>Folders do not grant chat access.</strong> Putting a chat in a shared folder does not automatically let an instructor or classmate read it. Chat permissions are controlled for each individual chat — a folder link may let someone see that a chat exists without letting them read it.</p>
+
+  <p>If someone specifically needs to read one of your chats:</p>
+  <ol class="steps">
+    <li>Open the chat.</li>
+    <li>Select the person-plus <strong>Share</strong> icon.</li>
+    <li>Add the person or change <strong>General access</strong> as instructed.</li>
+    <li>Copy the chat link.</li>
+  </ol>
+  <p>If your course uses a formal BoodleBox Assignment, follow that assignment workflow instead of treating a folder as a submission system.</p>
+
+  <h2>Prompt Modes</h2>
+  <p>Select <strong>Set prompt mode</strong> near the bottom-right of the prompt box to turn modes on or off. Modes can be combined.</p>
+
+  <h3>Memory Mode</h3>
+  <p>Allows the AI to use information from your previous chats. Turn it on when you're continuing an ongoing project and earlier conversations provide useful context. Turn it off when you want a fresh conversation without earlier work influencing the response.</p>
+
+  <h3>Coach Mode</h3>
+  <p>Adds short AI-literacy tips to the AI's responses.</p>
+
+  <h3>Message Mode</h3>
+  <p>Posts what you type as a human message rather than sending it to the AI. Useful in shared chats.</p>
+
+  <h3>Knowledge to Context Mode</h3>
+  <p>Loads attached documents into the AI's context in full from the start. You usually do not need this — BoodleBox normally decides when a full document needs to be loaded automatically. Use it when you specifically want the entire attached document considered from the beginning.</p>
+
+  <h2>Three Things That Are Easy to Confuse</h2>
+  <table>
+    <thead>
+      <tr><th>Feature</th><th>What it provides</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Knowledge Bank</td><td>Files you save and deliberately attach</td></tr>
+      <tr><td>Bot Knowledge</td><td>Files associated with a particular custom bot</td></tr>
+      <tr><td>Memory Mode</td><td>Information retrieved from your previous conversations</td></tr>
+    </tbody>
+  </table>
+  <p>If an assignment tells you to attach a particular file, don't assume Memory Mode or merely having the file in your Knowledge Bank is a substitute.</p>
+
+  <h2>If Something Is Not Working</h2>
+  <details class="disclosure">
+    <summary>The AI seems unaware of my file</summary>
+    <p>Check that the file is actually attached to the chat or bot, not merely stored in the Knowledge Bank.</p>
+  </details>
+  <details class="disclosure">
+    <summary>I cannot find a model</summary>
+    <p>Open the model picker &rarr; <strong>AI Models</strong> &rarr; choose the provider and expand its complete model list.</p>
+  </details>
+  <details class="disclosure">
+    <summary>Someone cannot read my chat</summary>
+    <p>Check the chat's Share / General access settings. Moving it into a folder does not change its permissions.</p>
+  </details>
+
+  <div class="navcards">
+    <a class="navcard" href="students.html"><strong>&larr; Back to Getting Started</strong><span>The short version, if you just need the basics.</span></a>
+    <a class="navcard" href="toolkit.html"><strong>Student AI Toolkit</strong><span>Model comparison, verification, and using AI responsibly.</span></a>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    Columbia College of Missouri · Psychology AI Integration Pilot<br>
+    Built by Jon Oxford with Claude Code and ChatGPT.
+  </div>
+</footer>
+</body>
+</html>
