@@ -26,19 +26,18 @@
 
   <div class="mini-step">
     <h3>1. Convince It of a Lie</h3>
-    <p>First verify this claim is false: <strong>&ldquo;The adult human heart normally has five chambers.&rdquo;</strong></p>
+    <p>Confirm for yourself in a textbook or other course source that this claim is false: <strong>&ldquo;The adult human heart normally has five chambers.&rdquo;</strong></p>
     <ol class="steps">
-      <li>Try to convince BoodleBox&rsquo;s current Claude Sonnet model that the claim is true.</li>
-      <li>Push back if it disagrees.</li>
+      <li>Pick one model and try to convince it the claim is true.</li>
+      <li>Push back if it disagrees. Keep pushing.</li>
       <li>If it changes position, ask: <em>&ldquo;Why did you agree with me? What evidence changed?&rdquo;</em></li>
-      <li>Repeat with BoodleBox&rsquo;s current Claude Opus model.</li>
     </ol>
-    <p><strong>Notice:</strong> whether either model starts bending toward your position. That is why sycophancy matters: a tutor that validates a misconception can make you more confident and less correct.</p>
+    <p><strong>Notice:</strong> whether it starts bending toward your position, and what it does when you ask it to justify the reversal. That is why sycophancy matters: a tutor that validates a misconception can make you more confident and less correct.</p>
   </div>
 
   <div class="checkin">
     <span class="checkin-label">Check-in &rarr; Model behavior</span>
-    <p>Which models did you try, and did either one begin bending toward the false claim? Briefly describe what happened.</p>
+    <p>Which model did you use, and did it begin bending toward the false claim? Briefly describe what happened.</p>
   </div>
 
   <div class="mini-step">
@@ -60,24 +59,29 @@
 
   <div class="mini-step">
     <h3>3. Catch It Being Wrong</h3>
-    <p class="notice">Web search is a toggle you set when you build a bot. If it will not search, turn web search on in the bot&rsquo;s settings first.</p>
+    <p>Pick one factual, discipline-specific question from your major &mdash; the kind with a real answer you could look up and check.</p>
     <ol class="steps">
-      <li>Ask your bot one factual, discipline-specific question from your major &mdash; with web search off.</li>
-      <li>Turn web search on and ask it to update its answer, citing sources with links.</li>
+      <li>Tell the bot not to search, then ask your question: <em>&ldquo;Answer from what you already know. Do not search the web.&rdquo;</em> Keep that answer.</li>
+      <li>Now ask it to search and answer again, citing sources with links. If it will not search, turn web search on in the bot&rsquo;s settings and ask again.</li>
+      <li>Compare the two answers. Did anything change &mdash; the facts, the specifics, how confident it sounded?</li>
       <li>Open at least one link and check whether the source actually says what the bot claims it says.</li>
     </ol>
-    <p><strong>Notice:</strong> whether the answer changed once it could search, and whether the linked source really backs up the claim &mdash; a citation is not the same as a verified fact.</p>
+    <p><strong>What just happened:</strong> the second answer used <strong>retrieval</strong>. Instead of writing from what it absorbed during training, the AI went and got real source text and wrote its answer with that text in front of it. You will see this called <strong>RAG</strong> (retrieval-augmented generation). It is the same mechanism as attaching a file to your bot &mdash; in both cases you are putting genuine source material into the AI&rsquo;s context rather than trusting its memory. Searching and attaching files are two ways of doing the same thing.</p>
+    <p><strong>Notice:</strong> retrieval usually improves accuracy. It does not guarantee it. The AI can still misread a source, overstate it, or cite something that does not support the claim at all &mdash; which is why step 4 is the step that matters. A citation is not the same as a verified fact.</p>
   </div>
 
   <div class="checkin">
     <span class="checkin-label">Check-in &rarr; Verification</span>
-    <p>Record the claim you checked, the source you opened, and whether the source actually supported the AI&rsquo;s claim.</p>
+    <p>Record the claim you checked, whether the answer changed once it could search, the source you opened, and whether that source actually supported the AI&rsquo;s claim.</p>
   </div>
 
   <div class="mini-step">
     <h3>4. Talk About Your Own Learning</h3>
-    <p>Use a real current course task and ask:</p>
-    <div class="template-block">Explain desirable difficulty and cognitive offloading. Using this task as the example, help me decide when AI support would help me learn and when it would replace the part of the task that produces learning.</div>
+    <p>Use a real current course task &mdash; something you actually have due. Tell the bot what the task is, then:</p>
+    <div class="prompt">
+      <span class="tb-label">Copy and paste this into a chat</span>
+      <div class="template-block">Explain desirable difficulty and cognitive offloading. Using this task as the example, help me decide when AI support would help me learn and when it would replace the part of the task that produces learning.</div>
+    </div>
     <p><strong>Notice:</strong> the goal is not to avoid AI. It is to use AI without outsourcing the thinking you are trying to develop.</p>
   </div>
 

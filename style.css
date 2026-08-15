@@ -237,6 +237,20 @@ th {
   color: var(--text);
 }
 
+.prompt { margin: 1.25rem 0; }
+
+.prompt .tb-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.35rem;
+}
+
+.prompt .template-block { margin: 0; }
+
 .note {
   font-size: 0.9rem;
   color: var(--muted);
