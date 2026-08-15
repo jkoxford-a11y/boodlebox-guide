@@ -220,6 +220,19 @@ th {
   justify-content: center;
 }
 
+.template-block {
+  margin: 1.25rem 0;
+  padding: 1.1rem 1.3rem;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  white-space: pre-wrap;
+  font-family: ui-monospace, "SF Mono", Consolas, monospace;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
 .note {
   font-size: 0.9rem;
   color: var(--muted);
