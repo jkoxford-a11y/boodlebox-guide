@@ -237,6 +237,12 @@ th {
   color: var(--text);
 }
 
+.takeaway {
+  margin: 0.9rem 0 0;
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--accent);
+}
+
 .prompt { margin: 1.25rem 0; }
 
 .prompt .tb-label {
