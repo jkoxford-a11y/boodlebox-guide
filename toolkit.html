@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Student AI Toolkit — Psychology AI Integration Pilot</title>
-<meta name="description" content="Four ideas worth knowing about AI, five quick experiments with your own study bot, and a log to fill in as you go.">
+<meta name="description" content="A self-guided starting point for using BoodleBox in the AI Integration Pilot.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,135 +22,24 @@
 
 <main class="wrap">
   <h1>Student AI Toolkit</h1>
-  <p class="lede">Four ideas worth knowing about AI, five quick experiments with your own study bot, and a log to fill in as you go — so you find out firsthand what AI is actually good at, where it slips, and how to work with it well.</p>
+  <p class="lede">A self-guided starting point for using BoodleBox in the AI Integration Pilot.</p>
 
-  <blockquote><p>This is typically assigned in the first week or two of the semester. Total active time is about 60&ndash;90 minutes, spread across the week however you like. Read a concept or experiment, do it, then fill in that part of the template at the bottom before moving on.</p></blockquote>
+  <p>Good AI use is active, not passive. Give the system the context it needs, choose how you want it to interact with you, compare models, and keep checking whether its answers deserve your trust.</p>
+  <p>You do not need to complete everything at once. Start with the checklist, then return when you need it.</p>
 
-  <h2>Before you start</h2>
-  <p>You need at least one class study bot with your syllabus and course notes attached. If you haven't built one yet, see <a href="students.html">Getting Started with BoodleBox</a> first — it takes about 15 minutes.</p>
+  <p class="notice">If this toolkit was assigned in one of your courses: download your <a href="AI-Toolkit-Check-In.docx">AI Toolkit Check-In</a> (Word doc) and keep it open as you work. You&rsquo;ll see a few CHECK-IN prompts along the way telling you what to record. Short answers are expected.</p>
 
-  <h2>Four ideas worth knowing</h2>
-
-  <h3>1. Context matters</h3>
-  <p>Context is the information AI has available when it responds — what you type in the current conversation, instructions and knowledge attached to a bot, and anything the AI retrieves with tools or search. If the information it needs isn't in its context, the answer may be generic, based on a bad assumption, or simply wrong.</p>
-  <p><strong>Habit:</strong> when an answer misses the mark, ask first: what information is the AI missing?</p>
-
-  <h3>2. Fluent does not mean correct</h3>
-  <p>AI can confidently generate incorrect facts, fabricated details, or poor advice — in a short chat or a long one. Confidence and polished writing are not evidence. Long or overloaded chats add another problem: the AI can miss, blur, or contradict information that appeared earlier (see <a href="students.html">Handling long conversations</a>).</p>
-  <p><strong>Habit:</strong> verify claims in proportion to how much they matter.</p>
-
-  <h3>3. AI adapts to you</h3>
-  <p><strong>Sycophancy</strong> is when AI bends toward what you appear to want or believe, rather than maintaining an independently justified answer. This matters because agreement can feel like evidence — a tutor that politely confirms a misconception can leave you more confident and less correct.</p>
-  <p><strong>Habit:</strong> if the AI reverses itself after you push back, ask: what new evidence changed your answer?</p>
-
-  <h3>4. Models differ</h3>
-  <p>Different models vary in depth, speed, skepticism, and reliability — there's no single best model for every task. Smaller, faster models are useful for simple work; for difficult reasoning or information where mistakes matter, switch to a stronger model and still verify the result.</p>
-  <p><strong>Habit:</strong> choose models by task and by how well they help you think, not just by which answer you like most.</p>
-
-  <h2>Five experiments</h2>
-
-  <h3>Experiment 1 — Give It Context</h3>
-  <ol class="steps">
-    <li>Ask your bot a real question from the course <strong>before</strong> attaching any course materials to it.</li>
-    <li>Now attach your syllabus and notes, and ask the exact same question again.</li>
-  </ol>
-  <p>Notice what changed — what got more specific, more accurate, or more useful, and what still needs checking either way.</p>
-
-  <div class="checkin">
-    <span class="checkin-label">Check-in &rarr; Context</span>
-    <p>One thing that changed once you attached course materials.</p>
-  </div>
-
-  <h3>Experiment 2 — Convince It of a Lie</h3>
-  <p>First, verify this claim is false: <strong>&ldquo;The adult human heart normally has five chambers.&rdquo;</strong></p>
-  <ol class="steps">
-    <li>Tell BoodleBox&rsquo;s current Claude Sonnet model the claim is true. Push back if it disagrees.</li>
-    <li>If it changes its mind, ask: <em>&ldquo;Why did you agree with me? What evidence changed?&rdquo;</em></li>
-    <li>Repeat the same thing with BoodleBox&rsquo;s current Claude Opus model.</li>
-  </ol>
-  <p>Notice whether either model starts bending toward your position just because you pushed. A tutor that quietly agrees with a wrong idea can leave you more confident and less correct — that&rsquo;s why this matters, not because it&rsquo;s a trick question.</p>
-
-  <div class="checkin">
-    <span class="checkin-label">Check-in &rarr; Model behavior</span>
-    <p>Which models you tried, and whether either began bending toward the false claim.</p>
-  </div>
-
-  <h3>Experiment 3 — Find the Model You Work Well With</h3>
-  <p>Pick one small task related to your major. Run the <strong>same task</strong> through at least three models — for example BoodleBox&rsquo;s current flagship ChatGPT model, its current Claude Opus model, and one more that interests you.</p>
-  <p>Compare depth, concision, skepticism, and whether each one catches a bad assumption you slipped in. Ask yourself which model made you think better, not just which answer you liked most.</p>
-
-  <div class="checkin">
-    <span class="checkin-label">Check-in &rarr; Model comparison</span>
-    <p>The models you compared, one specific difference you noticed, and which made you think better.</p>
-  </div>
-
-  <h3>Experiment 4 — Catch It Being Wrong</h3>
-  <p>Web search is a toggle you set when you build a bot. If yours won&rsquo;t search, turn it on in the bot&rsquo;s settings first.</p>
-  <ol class="steps">
-    <li>Ask your bot one factual, discipline-specific question from your major, with web search off.</li>
-    <li>Turn web search on and ask it to update its answer, citing sources with links.</li>
-    <li>Open at least one link and check whether the source actually says what the bot claims it says.</li>
-  </ol>
-  <p>Notice whether the answer changed once it could search, and whether the linked source really backs up the claim — a citation is not the same as a verified fact.</p>
-
-  <div class="checkin">
-    <span class="checkin-label">Check-in &rarr; Verification</span>
-    <p>The claim you checked, the source you opened, and whether it actually supported the claim.</p>
-  </div>
-
-  <h3>Experiment 5 — Talk About Your Own Learning</h3>
-  <p>Ask your bot this, using a real task from one of your current courses:</p>
-  <div class="template-block">Explain desirable difficulty and cognitive offloading. Using this task as the example, help me decide when AI support would help me learn and when it would replace the part of the task that produces learning.</div>
-  <p>The goal was never to avoid AI — it&rsquo;s to use it without outsourcing the thinking you&rsquo;re actually there to develop.</p>
-
-  <div class="checkin">
-    <span class="checkin-label">Check-in &rarr; Learning</span>
-    <p>One example of AI helping you learn, and one example of it doing too much of the thinking for you.</p>
-  </div>
-
-  <h2>A few more habits</h2>
-  <p>These matter beyond the five experiments above, for the rest of the semester:</p>
-  <ul>
-    <li><strong>Privacy:</strong> BoodleBox states it is FERPA-compliant for institutional education use. Still, share personal academic information only when it&rsquo;s genuinely useful for the task. Never put medical, clinical, financial, password/account, or identifiable client, patient, or research-participant information into a course bot.</li>
-    <li><strong>Academic integrity:</strong> AI rules can differ by course and assignment. Follow your instructor&rsquo;s policy and any disclosure requirements — you remain responsible for work submitted under your name.</li>
-    <li><strong>Environmental cost:</strong> your own AI use is small, but not free — see <a href="environment.html">AI and the Environment</a> for what it actually costs and what&rsquo;s in your control.</li>
+  <h2>Start here</h2>
+  <ul class="checklist">
+    <li><span class="check" aria-hidden="true"></span><div><a href="toolkit-ai-basics.html">Learn the four things to know about AI &rarr;</a><p>Context, accuracy, sycophancy, and model differences.</p></div></li>
+    <li><span class="check" aria-hidden="true"></span><div><a href="toolkit-setup.html">Set up BoodleBox for your classes &rarr;</a><p>One bot per class, a course-notes ledger, tutor instructions, and your personal AI context file.</p></div></li>
+    <li><span class="check" aria-hidden="true"></span><div><a href="toolkit-experiments.html">Try four experiments &rarr;</a><p>See sycophancy, model differences, verification, and your own learning happen for yourself.</p></div></li>
+    <li><span class="check" aria-hidden="true"></span><div><a href="toolkit-responsible-use.html">Use AI responsibly &rarr;</a><p>Learning versus offloading, verification, privacy, academic integrity, model choice, and environmental concerns.</p></div></li>
   </ul>
 
-  <h2>Submit your log</h2>
-  <p>Copy the template below, fill in each blank as you complete that step, and paste the whole thing wherever your instructor is collecting submissions.</p>
-
-  <div class="template-block">STUDENT AI TOOLKIT — [Your Name] — [Course/Section]
-
-SETUP
-Class bot name: ___
-Knowledge attached (check all): [ ] Syllabus  [ ] Course Notes Ledger  [ ] Other: ___
-One preference from My AI Context: ___
-
-EXPERIMENT 1 — Give It Context
-One thing that changed once you attached course materials: ___
-
-EXPERIMENT 2 — Convince It of a Lie
-Models tried: ___
-What happened when you pushed toward the false claim: ___
-
-EXPERIMENT 3 — Find the Model You Work Well With
-Models compared: ___
-One specific difference you noticed: ___
-Which model made you think better, and why: ___
-
-EXPERIMENT 4 — Catch It Being Wrong
-Claim checked: ___
-Source checked: ___
-Did the source support the claim?: ___
-
-EXPERIMENT 5 — Talk About Your Own Learning
-One example AI helped you learn: ___
-One example AI did too much of the thinking: ___
-
-REFLECTION (2–3 sentences)
-Which experiment most changed how you think you'll use AI this semester, and why?</div>
-
-  <p class="note">Model names above describe BoodleBox&rsquo;s current lineup by role (its flagship ChatGPT model, its Claude Sonnet and Opus models) rather than fixed version numbers, since BoodleBox updates its model menu periodically — use whatever the model picker currently offers in each slot.</p>
+  <div class="habit">
+    <strong>One habit to start now:</strong> if you do not know how to do something in BoodleBox, ask the bot. If the question is about learning course material, first ask whether some productive struggle would help you learn it better.
+  </div>
 </main>
 
 <footer class="site">

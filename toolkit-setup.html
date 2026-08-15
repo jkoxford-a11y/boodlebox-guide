@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Set Up Your AI — Student AI Toolkit</title>
+<meta name="description" content="Build a small AI workspace that gets more useful as your semester develops.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <span class="brand">Psychology AI Integration Pilot</span>
+    <nav class="top">
+      <a href="pilot.html">About</a>
+      <a href="students.html">BoodleBox Guide</a>
+      <a href="environment.html">Environment</a>
+      <a href="toolkit.html" class="active">Toolkit</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Set Up Your AI</h1>
+  <p class="lede">Build a small AI workspace that gets more useful as your semester develops.</p>
+
+  <div class="habit"><strong>First habit:</strong> if you do not know how to do something in BoodleBox, ask the bot. &ldquo;How do I add knowledge?&rdquo; or &ldquo;How do I update a file?&rdquo; is exactly the kind of question AI should save you time on.</div>
+
+  <h2>1. Create your personal AI context file</h2>
+  <p>Before you build your class bots, create one small file that tells AI how you prefer to work and learn. You only need to create this once, and you can reuse it across every class.</p>
+  <p>AI works differently depending on how you prefer to learn and communicate. Some people want terse answers; others want detailed explanations, challenging questions, or vocabulary that stretches them. Your context file should do more than describe you &mdash; it should tell AI how to <strong>challenge you</strong>, not just agree with you. Start simple; you can always ask for another interview later to add more.</p>
+
+  <details class="disclosure">
+    <summary>Interview prompt: build my AI context file</summary>
+    <div class="template-block">Interview me to create a short personal context file that I can give to AI systems so they can work with me more effectively.
+
+Ask one question at a time. Keep the interview focused on academic and communication preferences. Do not ask for sensitive personal information.
+
+Ask about:
+- my year in college and major;
+- courses or subjects I am currently working on;
+- how much detail I usually prefer, concise or expansive;
+- whether I want sophisticated vocabulary or simpler language;
+- whether examples, analogies, or direct explanations help me most;
+- how much you should challenge my assumptions rather than just agreeing with me.
+
+If I am unsure about a preference, briefly give me a few examples so I can choose.
+
+When the interview is finished, produce a short document titled "My AI Context" that AI can immediately use as instructions. Include only information I actually provided or explicitly approved.</div>
+  </details>
+
+  <p>Save the finished document as a knowledge bank item &mdash; you&rsquo;ll add it to each class bot you build next, not just the one you built it in. If you are not sure how, ask the bot.</p>
+  <div class="template-block">Show me how to create a knowledge bank item and how to attach that to chats.</div>
+  <div class="habit"><strong>Habit:</strong> treat this as a living file, not a one-time personality quiz. Your preferences may change as you learn how different models work &mdash; update it whenever you discover something that makes AI more useful, or something you want it to stop doing.</div>
+
+  <h2>2. Make one custom bot for every class</h2>
+  <p>A class bot combines two kinds of context: context about you &mdash; how you prefer AI to work with you &mdash; and context about the course &mdash; what you are actually learning. Build one bot for each course instead of mixing several classes into one general bot.</p>
+  <ol class="steps">
+    <li>Create the class bot in the Bot Builder.</li>
+    <li>Add the Socratic tutor instructions below.</li>
+    <li>Add My AI Context.</li>
+    <li>Add the syllabus.</li>
+    <li>Add your running Course Notes Ledger.</li>
+    <li>Add other high-value course materials &mdash; only a limited number of documents can be active on a bot at once, so be selective.</li>
+    <li>Turn on web search if you want this bot to look things up live, not just from what you attached.</li>
+    <li>Keep those sources current through the semester.</li>
+  </ol>
+
+  <details class="disclosure">
+    <summary>Starter Socratic tutor instructions</summary>
+    <div class="template-block">You are a Socratic study tutor.
+
+Your goal is to help me understand and remember course material, not simply give me answers.
+
+When I am working through a concept:
+- Ask me what I think first when that would help me learn.
+- Use questions, hints, examples, analogies, and counterexamples to help me reason.
+- Do not automatically agree with me. If my reasoning is weak, incomplete, or incorrect, tell me and explain why.
+- Distinguish clearly between information from my course materials, other information you are using, and anything you are uncertain about.
+- If you are unsure whether something is correct, say so rather than pretending certainty.
+- Occasionally ask me to explain the idea back to you or apply it to a new example.
+- Adapt your explanations to my preferences and level of understanding.
+
+Your job is to help me become less dependent on you as I learn, not more dependent.</div>
+  </details>
+
+  <h2>3. Keep one Course Notes Ledger</h2>
+  <p>Because only a limited number of documents can be active on a bot at once, do not use one source for every class meeting. Keep one running document instead&mdash;for example, <strong>PSYC 220 Course Notes Ledger</strong>.</p>
+  <ol class="steps">
+    <li>Type or transcribe your handwritten notes into the ledger (AI can usually do this straight from a picture).</li>
+    <li>Check the transcription against your original notes.</li>
+    <li>Date each class section.</li>
+    <li>Preserve terminology your instructor actually used.</li>
+    <li>Add new notes to the same running document.</li>
+    <li>Update the ledger in your class bot as the semester progresses.</li>
+  </ol>
+  <div class="habit"><strong>The point:</strong> your AI gets better as the context you maintain gets better.</div>
+
+  <div class="checkin">
+    <span class="checkin-label">Check-in &rarr; Setup</span>
+    <p>Record your bot name/course, the main knowledge sources you added, and one preference from My AI Context.</p>
+  </div>
+
+  <h2>4. Hand off long chats</h2>
+  <p>Around 30 substantive back-and-forth messages is a useful warning point to consider a fresh chat. That is a practical heuristic, not a technical cutoff. Start sooner if the conversation contains lots of pasted material, several topic changes, forgotten instructions, or contradictions.</p>
+  <p>Use the same class bot, ask for a handoff, then paste that handoff into a new conversation.</p>
+
+  <details class="disclosure">
+    <summary>Fresh-chat handoff prompt</summary>
+    <div class="template-block">Create a handoff for a fresh chat. Preserve my goal, important context, decisions we have made, unresolved questions, relevant terminology, and what we should do next. Do not add new conclusions.</div>
+  </details>
+
+  <div class="navcards">
+    <a class="navcard" href="toolkit-experiments.html"><strong>Next: Try the Experiments &rarr;</strong><span>See context, sycophancy, verification, and model differences happen.</span></a>
+    <a class="navcard" href="toolkit.html"><strong>Back to Student Toolkit</strong><span>Return to the checklist.</span></a>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    Columbia College of Missouri · Psychology AI Integration Pilot
+  </div>
+</footer>
+</body>
+</html>
