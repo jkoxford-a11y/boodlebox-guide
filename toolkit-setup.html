@@ -34,7 +34,10 @@
     <summary>Interview prompt: build my AI context file</summary>
     <p>Open a chat, copy everything in the box below, paste it in, and answer the questions it asks you. You do not need to write anything yourself first &mdash; the prompt runs the interview.</p>
     <div class="prompt">
-    <span class="tb-label">Copy and paste this into a chat</span>
+    <div class="prompt-head">
+      <span class="tb-label">Copy and paste this into a chat</span>
+      <button type="button" class="copy-btn">Copy</button>
+    </div>
     <div class="template-block">Interview me to create a short personal context file that I can give to AI systems so they can work with me more effectively.
 
 Ask one question at a time. Keep the interview focused on academic and communication preferences. Do not ask for sensitive personal information.
@@ -55,7 +58,10 @@ When the interview is finished, produce a short document titled "My AI Context" 
 
   <p>Save the finished document as a knowledge bank item &mdash; you&rsquo;ll add it to each class bot you build next, not just the one you built it in. If you are not sure how, ask the bot.</p>
   <div class="prompt">
-    <span class="tb-label">Copy and paste this into a chat</span>
+    <div class="prompt-head">
+      <span class="tb-label">Copy and paste this into a chat</span>
+      <button type="button" class="copy-btn">Copy</button>
+    </div>
     <div class="template-block">Show me how to create a knowledge bank item and how to attach that to chats.</div>
   </div>
   <div class="habit"><strong>Habit:</strong> treat this as a living file, not a one-time personality quiz. Your preferences may change as you learn how different models work &mdash; update it whenever you discover something that makes AI more useful, or something you want it to stop doing.</div>
@@ -90,7 +96,10 @@ When the interview is finished, produce a short document titled "My AI Context" 
     <summary>Starter Socratic tutor instructions</summary>
     <p>Paste this into the bot&rsquo;s <strong>Bot Instructions</strong> field &mdash; not into a chat, and not into the greeting.</p>
     <div class="prompt">
-    <span class="tb-label">Copy and paste into Bot Instructions</span>
+    <div class="prompt-head">
+      <span class="tb-label">Copy and paste into Bot Instructions</span>
+      <button type="button" class="copy-btn">Copy</button>
+    </div>
     <div class="template-block">You are a Socratic study tutor.
 
 Your goal is to help me understand and remember course material, not to hand me answers.
@@ -120,7 +129,10 @@ Your job is to make me less dependent on you as I learn, not more.</div>
   <details class="disclosure">
     <summary>Fresh-chat handoff prompt</summary>
     <div class="prompt">
-      <span class="tb-label">Copy and paste this into the old chat</span>
+      <div class="prompt-head">
+        <span class="tb-label">Copy and paste this into the old chat</span>
+        <button type="button" class="copy-btn">Copy</button>
+      </div>
       <div class="template-block">Create a handoff for a fresh chat. Preserve my goal, important context, decisions we have made, unresolved questions, relevant terminology, and what we should do next. Do not add new conclusions.</div>
     </div>
   </details>
@@ -137,5 +149,6 @@ Your job is to make me less dependent on you as I learn, not more.</div>
     Built by Jon Oxford with Claude Code and ChatGPT.
   </div>
 </footer>
+<script src="copy.js"></script>
 </body>
 </html>
